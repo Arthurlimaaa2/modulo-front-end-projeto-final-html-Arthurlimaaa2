@@ -1,0 +1,320 @@
+/* #111827     background 1
+
+#243542     background 2
+
+#05F98E      acento
+
+#02B06A     acento
+
+#9dffd4 
+
+#C5C5C5 texto 1
+
+#E2E2E2
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poiret One", sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: #C5C5C5;
+    line-height: 1.6;
+}
+
+.hr{
+    border: 2px solid #02B06A;
+    margin: 2px 20px 2px 20px;
+    border-radius: 5px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1{
+    font-style: oblique;
+    font-weight: 800;
+    font-size: 50px;
+    padding-bottom: 5px;
+    color: #05F98E;
+}
+
+.header nav i{
+    font-size: 20px;
+    margin: 0 15px;
+    color: #9dffd4;
+    transition: transform 0.7s;
+}
+
+.header nav i:hover {
+    transform: scale(1.7);
+    color: #05F98E;
+}
+
+/* Seção Sobre */
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-about img {
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section-about h2 span {
+    border-bottom: 3px solid#02B06A;
+    border-radius: 5px;
+}
+
+.section-about-box h3{
+    margin: 5px 0;
+}
+
+.section-about-box p{
+    color: #9dffd4;
+    font-weight: 900;
+}
+
+/* Skills */
+.Linguagens-box h2{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.Linguagens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.box {
+    background: #243542;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    transition: 0,9s;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.box i {
+    font-size: 3rem;
+    color: #02B06A;
+}
+
+.box-text{
+    text-align: justify;
+    justify-content: space-evenly;
+}
+
+
+/* Projetos */
+.projects h2,{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.box-projects {
+background: #243542;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.8s;
+}
+
+.box-projects:hover {
+    transform: translateY(-5px);
+}
+
+.box-projects img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cta-contact-link {
+    display: inline-block;
+    margin: 15px;
+    padding: 8px 15px;
+    color: #C5C5C5;
+    text-decoration: none;
+    font-weight: bold;
+    background: #243542;
+    border: 2px solid #9dffd4;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.cta-contact-link:hover {
+    background: #02B06A;
+    color: #111827;
+    transform: scale(1.1);
+}
+
+.box-projects-text {
+    margin: 2px 0 2px 10px;
+}
+
+.box-projects-text h4 {
+    font-size: 20px;
+    color: #05F98E;
+}
+
+.box-projects-text span {
+    font-size: 15px;
+}
+
+/* Formulário */
+.contact {
+    background: #243542;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.entre-em-contato h2{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.entre-em-contato p{
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #5fdde5;
+    color: #9dffd4;
+    font-size:  15px;
+    font-weight: 600;
+}
+
+.error-message {
+    color: #02B06A;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.error-message.active {
+    display: block;
+}
+
+button[type="submit"] {
+    background: #02B06A;
+    color: #242424;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: scale 0.8s;
+
+}
+
+button[type="submit"]:hover {
+    scale: 1.1;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #111827;
+}
+
+.footer nav i{
+font-size: 20px;
+margin: 0 15px;
+color: #9dffd4;
+transition: transform 0.7s;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 50px;
+    }
+
+    .section-about {
+        flex-direction: row;
+        gap: 50px;
+        text-align: center;
+        justify-content: center;
+       	
+        }
+    .section-about h2 {
+        font-size: 35px;
+    }
+
+    .section-about h3{
+        font-size: 30px;
+    }
+    .section-about p{
+        font-size: 27px;
+    }
+
+    .section-about img {
+        width: 40%;
+        margin-top: 0;
+        align-content: center;
+    }
+    .Linguagens-box h2,
+    .projects h2{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h2{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 30px;
+    }
+}
